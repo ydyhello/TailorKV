@@ -1,0 +1,9 @@
+{
+    "NousResearch/Meta-Llama-3.1-8B-Instruct":[0],
+    "togethercomputer/Llama-2-7B-32K-Instruct":[0,1],
+    "01-ai/Yi-9B-200K":[0,1],
+    "01-ai/Yi-6B-200K":[0,1],
+    "mistralai/Mistral-7B-Instruct-v0.3":[0],
+    "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4":[0],
+    "hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4":[0]
+}
