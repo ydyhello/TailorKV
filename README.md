@@ -118,6 +118,12 @@ bash ./ruler/run.sh
 
 ### InfiniteBench
 
+To run the InfiniteBench benchmark, you need first download required data files:
+
+```
+bash ./infinitebench/download_dataset.sh
+```
+
 Run InfiniteBench with TailorKV: (e.g., Llama-3.1-8B-Instruct)
 
 ```
