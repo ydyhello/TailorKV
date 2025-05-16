@@ -1,4 +1,4 @@
-# TailorKV
+# TailorKV: A Hybrid Framework for Long-Context Inference via Tailored KV Cache Optimization
 
 
 - [Quick Start](#quick-start)
@@ -9,7 +9,7 @@
     - [LongBench](#longbench)
     - [RULER](#ruler)
     - [InfiniteBench](#infinitebench)
-- [# Acknowledgements](#acknowledgements)
+- [Acknowledgements](#acknowledgements)
 
 # Quick Start
 
