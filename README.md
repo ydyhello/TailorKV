@@ -1,16 +1,12 @@
 # TailorKV: A Hybrid Framework for Long-Context Inference via Tailored KV Cache Optimization
 
+Implementation of [TailorKV: A Hybrid Framework for Long-Context Inference via Tailored KV Cache Optimization](https://arxiv.org/abs/2505.19586)
 
-- [Quick Start](#quick-start)
-  - [Setup](#setup)
-  - [Example](#example)
-  - [Offline Identification](#offline-identification)
-  - [Evaluation](#evaluation)
-    - [LongBench](#longbench)
-    - [RULER](#ruler)
-    - [InfiniteBench](#infinitebench)
-- [Acknowledgements](#acknowledgements)
+# TL;DR
 
+We introduce TailorKV, a hybrid KV cache compression framework that integrates quantization and offloading to achieve efficient long-context inference in large language models with minimal performance loss.
+
+![TailorKV](./TailorKV.png)
 # Quick Start
 
 ## Setup
@@ -138,6 +134,22 @@ bash ./infinitebench/run_yi.sh
 python eval_long_bench.py --task {task} --output_dir {output_dir} --model_name {model_name}
 ```
 
+# Citation
+If you find our method useful, please kindly cite our paper.
+
+```
+@misc{yao2025tailorkvhybridframeworklongcontext,
+      title={TailorKV: A Hybrid Framework for Long-Context Inference via Tailored KV Cache Optimization}, 
+      author={Dingyu Yao and Bowen Shen and Zheng Lin and Wei Liu and Jian Luan and Bin Wang and Weiping Wang},
+      year={2025},
+      eprint={2505.19586},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.19586}, 
+}
+```
+
+
 # Acknowledgements
 
-We sincerely thank the Xiaomi Large Model PLUS team for their generous support in the development of TailorKV, without which this repository would not have been possible.
+We sincerely thank Xiaomi Inc for their generous support in the development of TailorKV, without which this repository would not have been possible.
