@@ -138,14 +138,28 @@ python eval_long_bench.py --task {task} --output_dir {output_dir} --model_name {
 If you find our method useful, please kindly cite our paper.
 
 ```
-@misc{yao2025tailorkvhybridframeworklongcontext,
-      title={TailorKV: A Hybrid Framework for Long-Context Inference via Tailored KV Cache Optimization}, 
-      author={Dingyu Yao and Bowen Shen and Zheng Lin and Wei Liu and Jian Luan and Bin Wang and Weiping Wang},
-      year={2025},
-      eprint={2505.19586},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.19586}, 
+@inproceedings{yao-etal-2025-tailorkv,
+    title = "{T}ailor{KV}: A Hybrid Framework for Long-Context Inference via Tailored {KV} Cache Optimization",
+    author = "Yao, Dingyu  and
+      Shen, Bowen  and
+      Lin, Zheng  and
+      Liu, Wei  and
+      Luan, Jian  and
+      Wang, Bin  and
+      Wang, Weiping",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.1043/",
+    pages = "20340--20359",
+    ISBN = "979-8-89176-256-5",
+    abstract = "The Key-Value (KV) cache in generative large language models (LLMs) introduces substantial memory overhead. Existing works mitigate this burden by offloading or compressing the KV cache. However, loading the entire cache incurs significant latency due to PCIe bandwidth bottlenecks in CPU-GPU communication, while aggressive compression causes notable performance degradation. We identify that certain layers in the LLM need to maintain global information and are unsuitable for selective loading. In contrast, other layers primarily focus on a few tokens with dominant activations that potentially incur substantial quantization error. This observation leads to a key insight that loading dominant tokens and quantizing all tokens can complement each other. Building on this insight, we propose a hybrid compression method, TailorKV, which seamlessly integrates quantization and offloading. TailorKV develops an inference framework along with a hardware-friendly implementation that leverages these complementary characteristics. Extensive long-context evaluations exhibit that TailorKV achieves nearly lossless performance under aggressive compression settings, outperforming the state-of-the-art. Particularly, the Llama-3.1-8B with 128k context can be served within a single RTX 3090 GPU, reaching 82 ms per token during decoding."
 }
 ```
 
